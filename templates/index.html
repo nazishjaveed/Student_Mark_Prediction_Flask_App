@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Prediction</title>
+</head>
+<body>
+    <h1>Student Marks Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="study_hours">Study Hours:</label>
+        <input type="number" step="0.1" name="study_hours" required><br>
+        
+        <label for="attendance">Attendance (%):</label>
+        <input type="number" step="0.1" name="attendance" required><br>
+        
+        <label for="previous_marks">Previous Marks:</label>
+        <input type="number" name="previous_marks" required><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
